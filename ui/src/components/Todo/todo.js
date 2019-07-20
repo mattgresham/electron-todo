@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { ReactComponent as IconDelete } from '../../images/delete.svg';
+import iconDelete from '../../images/delete.png';
 import styles from './todo.module.css';
 
 const Todo = ({ completeTodo, deleteTodo, id, isCompleted, text }) => (
@@ -32,7 +32,7 @@ const Todo = ({ completeTodo, deleteTodo, id, isCompleted, text }) => (
       onClick={() => deleteTodo(id)}
       type="button"
     >
-      <IconDelete title="Delete Todo" />
+      <img alt="Delete Todo" src={iconDelete} />
     </button>
   </div>
 );

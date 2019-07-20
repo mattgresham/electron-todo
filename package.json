@@ -33,9 +33,10 @@
     }
   },
   "scripts": {
-    "start": "cd ui && concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && cd .. && nodemon --exec electron . \"",
+    "start": "cd ui && concurrently \"npm start\" \"wait-on http://localhost:3000 && cd .. && nodemon --exec electron . \"",
     "postinstall": "npm-recursive-install --skip-root && electron-builder install-app-deps",
     "build": "cd ui && npm run build && cd .. && electron-builder -mw",
+    "build-win": "cd ui && npm run build && cd .. && electron-builder -w",
     "test-api": "cd api && npm run test",
     "test-ui": "cd ui && npm run test"
   },

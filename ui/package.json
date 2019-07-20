@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "./",
   "main": "src/index.js",
+  "browserslist": [
+    "chrome >= 73"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

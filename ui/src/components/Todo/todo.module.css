@@ -20,6 +20,7 @@
 }
 
 .deleteButton {
+  background: none;
   border: 0;
   color: #cd5c5c;
   display: flex;

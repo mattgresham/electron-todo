@@ -21,9 +21,4 @@ const getTodos = async setTodos => {
   setTodos(todos);
 };
 
-export {
-  addTodo,
-  completeTodo,
-  deleteTodo,
-  getTodos,
-};
+export { addTodo, completeTodo, deleteTodo, getTodos };

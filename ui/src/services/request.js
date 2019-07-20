@@ -1,13 +1,10 @@
 const API_BASE_URL = 'http://localhost:8008/api/';
 
 const getRequest = async url => {
-  const response = await fetch(
-    `${API_BASE_URL}${url}`,
-    {
-      headers: { 'Content-Type': 'application/json' },
-      method: 'GET'
-    }
-  );
+  const response = await fetch(`${API_BASE_URL}${url}`, {
+    headers: { 'Content-Type': 'application/json' },
+    method: 'GET'
+  });
   return response.json();
 };
 
@@ -38,7 +35,7 @@ const patchRequest = async (url, data) => {
   return response.json();
 };
 
-const deleteRequest = async (url) => {
+const deleteRequest = async url => {
   const response = await fetch(`${API_BASE_URL}${url}`, {
     headers: { 'Content-Type': 'application/json' },
     method: 'DELETE'
@@ -51,5 +48,5 @@ export default {
   getRequest,
   patchRequest,
   postRequest,
-  pushRequest,
+  pushRequest
 };
