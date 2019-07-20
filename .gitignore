@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /api/node_modules
+/ui/node_modules
 /.pnp
 .pnp.js
 
@@ -10,7 +11,7 @@
 /coverage
 
 # production
-/build
+/ui/build
 /dist
 
 # misc

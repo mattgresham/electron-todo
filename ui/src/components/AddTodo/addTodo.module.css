@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.textField {
+  border-radius: 0.25rem;
+  border: 1px solid #d3d3d3;
+  font-size: 2rem;
+  margin-right: 1rem;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.textField::placeholder {
+  opacity: 0.5;
+}
+
+.addButton {
+  background: none;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}

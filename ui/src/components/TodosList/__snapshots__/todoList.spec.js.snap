@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList renders with default props 1`] = `
+<div
+  class="todoList"
+>
+  <h1
+    class="heading"
+  >
+    To Do List
+  </h1>
+  <hr
+    class="line"
+  />
+  <div
+    class="todoContainer"
+  >
+    <div />
+  </div>
+  <form
+    class="container"
+  >
+    <input
+      class="textField"
+      placeholder="Enter something to do..."
+      type="text"
+      value=""
+    />
+    <button
+      class="addButton"
+      disabled=""
+      type="submit"
+    >
+      Add
+    </button>
+  </form>
+</div>
+`;

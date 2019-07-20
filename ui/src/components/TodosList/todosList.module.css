@@ -1,0 +1,30 @@
+.todoList {
+  background-color: #FFF;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 32px -10px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  max-height: 40rem;
+  max-width: 40rem;
+  min-height: 20rem;
+  min-width: 20rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.line {
+  border: 1px solid #E3E3DE;
+  width: 100%;
+}
+
+.todoContainer {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem 0;
+}

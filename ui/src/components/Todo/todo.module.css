@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  margin: 0.25rem 1rem 0.25rem 0;
+}
+
+.completedCheckbox {
+  margin: 0.8rem 1rem 0.2rem 1rem;
+}
+
+.text {
+  flex: 1;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  border: 0;
+  color: #cd5c5c;
+  display: flex;
+  padding-top: 0.25rem;
+}
+
+.deleteButton svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}

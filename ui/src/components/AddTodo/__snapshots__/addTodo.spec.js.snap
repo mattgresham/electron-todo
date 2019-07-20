@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo renders with a text prop 1`] = `
+<form
+  class="container"
+>
+  <input
+    class="textField"
+    placeholder="Enter something to do..."
+    type="text"
+    value="Todo"
+  />
+  <button
+    class="addButton"
+    type="submit"
+  >
+    Add
+  </button>
+</form>
+`;
+
+exports[`AddTodo renders with default props 1`] = `
+<form
+  class="container"
+>
+  <input
+    class="textField"
+    placeholder="Enter something to do..."
+    type="text"
+    value=""
+  />
+  <button
+    class="addButton"
+    disabled=""
+    type="submit"
+  >
+    Add
+  </button>
+</form>
+`;

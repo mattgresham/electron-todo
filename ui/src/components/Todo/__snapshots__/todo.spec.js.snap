@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo renders with complete prop 1`] = `
+<div
+  class="container"
+>
+  <div>
+    <input
+      checked=""
+      class="completedCheckbox"
+      disabled=""
+      id="todo-checkbox-1"
+      type="checkbox"
+    />
+    <label
+      class="sr-only"
+      for="todo-checkbox-1"
+    >
+      Complete todo
+    </label>
+  </div>
+  <span
+    class="text strikethrough"
+  >
+    Todo
+  </span>
+  <button
+    class="deleteButton"
+    type="button"
+  >
+    <svg
+      title="Delete Todo"
+    >
+      delete.svg
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Todo renders with default props 1`] = `
+<div
+  class="container"
+>
+  <div>
+    <input
+      class="completedCheckbox"
+      id="todo-checkbox-1"
+      type="checkbox"
+    />
+    <label
+      class="sr-only"
+      for="todo-checkbox-1"
+    >
+      Complete todo
+    </label>
+  </div>
+  <span
+    class="text"
+  >
+    Todo
+  </span>
+  <button
+    class="deleteButton"
+    type="button"
+  >
+    <svg
+      title="Delete Todo"
+    >
+      delete.svg
+    </svg>
+  </button>
+</div>
+`;
