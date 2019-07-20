@@ -33,10 +33,11 @@
     }
   },
   "scripts": {
-    "postinstall": "electron-builder install-app-deps",
-    "preelectron-pack": "npm run build",
-    "electron-pack": "electron-builder -mw"
     "start": "cd ui && concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && cd .. && nodemon --exec electron . \"",
+    "postinstall": "npm-recursive-install --skip-root && electron-builder install-app-deps",
+    "build": "cd ui && npm run build && cd .. && electron-builder -mw",
+    "test-api": "cd api && npm run test",
+    "test-ui": "cd ui && npm run test"
   },
   "dependencies": {
     "electron-is-dev": "^1.1.0",
