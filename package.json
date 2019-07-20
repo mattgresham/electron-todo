@@ -1,12 +1,8 @@
 {
-  "name": "assembly-payments",
+  "name": "todo-electron-app",
   "version": "0.1.0",
   "private": true,
-  "main": "public/electron.js",
   "homepage": "./",
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -19,14 +15,15 @@
       "last 1 safari version"
     ]
   },
+  "main": "./app.js",
   "author": {
     "name": "Matt Gresham",
     "email": "matt.gresham@me.com",
     "url": "https://www.linkedin.com/in/matt-gresham/"
   },
   "build": {
-    "appId": "com.matt-gresham.assembly-payments",
-    "productName": "AssemblyPayments",
+    "appId": "com.matt-gresham.todo-electron-app",
+    "productName": "TodoElectronApp",
     "copyright": "Copyright © 2019 ${author}",
     "mac": {
       "category": "public.app-category.utilities"
@@ -42,6 +39,7 @@
           "**/*"
         ]
       },
+      "app.js"
     ],
     "directories": {
       "buildResources": "assets"
@@ -67,7 +65,7 @@
   "devDependencies": {
     "concurrently": "^4.1.1",
     "electron": "^5.0.6",
-    "electron-builder": "^21.0.15",
+    "electron-builder": "^21.1.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
